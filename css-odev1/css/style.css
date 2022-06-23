@@ -1,0 +1,15 @@
+h1{
+    color:#E04D01;
+}
+h2,h3{
+    color:#FFC54D;
+}
+li{    
+    list-style-position: inside;
+    margin-bottom: 2em;
+    margin-top: 0.5em;    
+}
+a{
+    color: #BD4291;
+
+}

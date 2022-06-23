@@ -1,0 +1,28 @@
+/* class -> .text-red{}  (vereceğim class adının başına nokta koyuyorsun  */
+/* id -> #id-bilgisi {} (ID başına da # koyuyorsun) */
+
+.text-red{
+    color: red;
+}
+
+.fs-small{
+    font-size: 0.5em;
+}
+
+.fs-medium{
+    font-size: 1em;
+}
+
+.fs-large{
+    font-size: 1.5em;
+}
+
+#last-article{
+    font-size: 40px;
+    color: blue;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: #202020;
+}
+

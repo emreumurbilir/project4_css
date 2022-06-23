@@ -1,0 +1,26 @@
+/* Açıklama satırı
+
+*/
+
+body {
+    background-color: yellow;
+    font-family: 'Times New Roman', Times, sans-serif; /* Eğer yazdığımız font yoksa en sonunda fontun temelini yazıyoruz. O temel font açılıyor böylece. */ 
+
+}
+
+h2 {
+    color:purple; 
+    font-size: 36px;
+    text-transform: uppercase; /*Hepsi büyük harf*/
+}
+
+p{
+    font-size: 1em; /* Em ile Yazı Tipi Boyutunu Ayarla
+    Kullanıcıların metni yeniden boyutlandırmasına izin vermek için (tarayıcı menüsünde), birçok geliştirici piksel yerine em kullanır.
+    
+    1em, mevcut yazı tipi boyutuna eşittir. Tarayıcılarda varsayılan metin boyutu 16 pikseldir. Yani, 1em'in varsayılan boyutu 16 pikseldir. */
+}
+
+ul{
+    color: blue;
+}
