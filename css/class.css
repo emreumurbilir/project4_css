@@ -26,3 +26,34 @@ h1,h2,h3,h4,h5,h6{
     color: #202020;
 }
 
+/* nth-child ile  aynı dizinde sıralanan etiketlere istediğimiz özellikleri atıyoruz.
+Bu örnekte odd ile tek sayılardaki etiketlere, even ile çift sayılardaki etiketlere özellik atadık. CSS Selector Reference aramasıyla tüm özelliklerine ulaşabilirsin. 
+:first-child ile ilk etikete, :last-child ile son etikete özellik atayabiliyorsun mesela
+*/
+li:nth-child(odd){
+    color:red;
+}
+
+li:nth-child(even){
+    background-color: aqua;
+}
+
+/* İlk kullanımda tüm elementlerin margin ve padding değerlerini sıfırlamış olduk. İkinci kullanımda div * diyerek tüm div elementleri içindeki elementlerin yazı rengine erişmiş olduk. */
+
+
+*{
+    margin:0;
+    padding:0;
+  }
+  div *{
+    color:orange;
+  }
+
+  /* Ekstra bilgi için şu sayfadaki döküman da iyi::after
+  https://app.patika.dev/courses/css/css-seciciler-ile-calismak,-i%CC%87stedigimiz-html-etiket-yapisina-ozelliklik-ekleyebilmek
+   */
+
+   p::before {
+    content: "selam";
+    color: orange;
+  }
