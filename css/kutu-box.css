@@ -1,0 +1,24 @@
+body{
+    margin: 0; /* Margin, kutu dışındaki boşluk ayarı */
+    /* margin: 10px; Dört tarafından 10px margin veriyor yer belirtmeyince */
+    padding: 0; /* Padding, kutu içindeki boşluk ayarı */
+}
+
+.container{
+    width: 300px; /* emet: w300 yazınca tamamlıyor*/
+    height: 300px;
+    padding: 10px; /*Dört bir yanına padding 10 verdiğimiz için, sayfada kaplayacağı alan 320*320px'e çıkar. Yerleşim yaparken bunu dikkate al*/    
+    margin-left: 10px; /* ml10 yazınca Emet özelliği ile komutu tamamlıyor: margin-left: 10px; Aynı şelilde mr10 (right) mt10 (Top) mb10 (Bottom) yazılabilir */
+    float: left; /*Soldan hizalayarak yan yana diz demiş olduk*/
+}
+
+.clear{
+    clear: both; /*Div'e clear classI atadık. Bu div'in hem sağı hem solunu temizliyor. Sonraki yazılar, bu kutucukların yanındaki boş yerden değil, kutuların altından başlıyor böylece */
+}
+.bg-aqua{
+    background-color: aqua;
+}
+
+.bg-green{
+    background-color: green;
+}

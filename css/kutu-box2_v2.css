@@ -1,0 +1,66 @@
+/* Dersle eşgüdümlü */
+
+body{
+    margin: 0;
+    padding: 0; 
+}
+
+/* h1{
+    float: left;
+} */
+
+.clear{
+    clear: both;
+}
+
+.container{
+    margin-top: 50px;
+    width:1000px;
+    height: 210px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: yellow;
+    border-radius: 10px;
+}
+.left-bar{
+    width: 190px;
+    float: left;
+    padding: 5px;
+}
+
+.content{
+    width: 800px;
+    float: left;
+    
+}
+
+.card{
+    margin-top: 5px;    
+    width: 20%;
+    float: left;
+    padding: 5%;
+    margin-right: 3%;
+    background-color: rgb(207, 181, 181);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* .box{
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    margin-right: 10px;
+    float: left;
+} */
+
+.bg-red{
+    background-color: red;
+}
+
+.bg-green{
+    background-color: green;
+}
+
+.bg-yellow{
+    background-color: yellow;
+}
