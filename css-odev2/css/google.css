@@ -1,0 +1,48 @@
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;   
+}
+
+
+.search{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #EEEEEE;
+    padding-top: 1.5px;
+    margin-top: 1.5px;
+}
+
+
+.link1{
+    background-color: #7EE5DA;
+    width: 37%;
+    height: 100%;
+    text-align: center;   
+}
+
+.link2{
+    background-color: #70ccc2;    
+    height: 100%;    
+    font-size: small;
+    text-align: center;
+}
+
+.link3{
+    background-color: #62b3aa;    
+    width: 43%;
+    height: 100%;    
+    font-size: small;
+    text-align: center;
+}
+
+
+.footer{
+    clear: both;
+    text-align: center; 
+    font-size: smaller;
+    padding-top: 17px;    
+}
+
