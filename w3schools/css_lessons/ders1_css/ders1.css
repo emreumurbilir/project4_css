@@ -1,0 +1,189 @@
+body {
+    background-color: rgb(203, 233, 243);
+}
+
+h1{
+    color:blueviolet;
+    text-align: center;
+}
+
+h2{
+    color: brown;
+    text-align: center;
+}
+
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+
+#idselector{
+    color: red;
+    text-align: right;
+}
+
+p.center{
+    color: blue;
+    text-align: center;
+}
+
+.big{
+    font-size: 35px;
+}
+
+.border{
+    border: 2px solid tomato;
+    background-color: rgba(255, 99, 71, 0.5); /* RGB'den farkı a takısıyla 4. değer olarak alpha kanalı değeri yani transparent özelliği veriyorsun. Bu örnekte trasparency yüzde 50 */
+}
+
+p.background{
+    background: rgba(61, 202, 167, 0.7);    
+}
+
+p.back-image{
+    background-image: url(../images/Bwceds.png);
+    height: 40px;    
+}
+
+body.background{
+    background-image: url(../images/carpet.jpg);
+    background-repeat: no-repeat;
+    /* background-repeat: repeat-x; imajı, horizontal tekrar ediyor */
+    /* background-repeat: repeat-y; imajı, vertical tekrar ediyor */
+    background-position: right top;
+    background-attachment: fixed; 
+    /* fixed olunca, cursor ile aşağıya inecek bile olsan, imaj sabit duruyor arka planda yani cursor ile aşağıya iniyor. scroll olunca cursor ile aşağıya inince, olduğu yerde kalıyor sabit. */
+    /* background-attachment: scroll; */
+}
+
+/* Yukarıdaki kısa şekilde şöyle de yazabiliyoruz:
+body.background{
+    background: #ffffff url(../images/carpet.jpg) no-repeat right top fixed;  
+} */
+
+
+/* CSS Border style */
+p.dotted {
+    border-style: dotted;
+    border-width: 2px;
+}
+
+p.dashed {
+    border-style: dashed;
+    border-width: medium;
+}
+
+p.solid {
+    border-style: solid;
+    border-width: thick;
+}
+
+p.double {
+    border-style: double;
+    border-width: 5px 20px; /* 5px top and bottom, 20px on the sides */
+    border-color: red green blue yellow; /* red top, green right, blue bottom and yellow left */    
+}
+
+p.groove {
+    border-style: groove;
+    border-width: 25px 10px 4px 35px; /* 25px top, 10px right, 4px bottom and 35px left */
+    border-color: chocolate;
+}
+
+p.ridge {
+    border-top-style: ridge;
+    border-right-style: inset;
+    border-bottom-style: outset;
+    border-left-style: inset;    
+}
+
+p.inset {
+    border-style: inset outset;
+}
+
+p.mix {border-style: dotted dashed solid double;}
+
+p.threevalues{
+    border-style: dotted solid double;
+} 
+
+p.none {
+    border-style: none;
+}
+/* Defines no border */
+
+p.hidden {
+    border-style: hidden;
+}
+/* Defines a hidden border */
+
+/* CSS Shorthand */
+p.shorten1{
+    border: 5px solid red;
+}
+
+p.shorten2{
+    border-bottom: 5px solid blue;
+}
+
+p.round {
+    border: 2px solid red;
+    border-radius: 12px;
+    padding: 5px;
+  }
+
+/* Margins: Margins are used to create space around elements, outside of any defined borders. */
+
+/* Padding is used to create space around an element's content, inside of any defined borders.
+*/
+
+/* All the margin and padding properties can have the following values:
+length - specifies a padding in px, pt, cm, etc.
+% - specifies a padding in % of the width of the containing element
+inherit - specifies that the padding should be inherited from the parent element */
+
+p.margin1{
+    margin: 70px;
+    padding: 5px;
+    border: 1px solid black;    
+}
+
+p.margin2{
+        width: 300px;
+        padding: 5px;
+        margin: auto;
+        border: 1px solid red;
+}
+
+/* margin inherit  */
+
+div.margin1 {
+    border: 1px solid red;
+    margin-left: 100px;
+  }
+  
+p.ex1 {
+    margin-left: inherit;
+}
+
+/* Margin Collapse
+Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins.
+
+This does not happen on left and right margins! Only top and bottom margins 
+
+Örnek vermedim, not olarak aldım. özet olarak bir objenin alt marjiniyle diğerinin üst marjini çakışırsa, büyük değerdeki geçerli oluyor, küçük değerdeki yok sayılıyor, bir nevi büyük balık küçük balığı yutuyor*/
+
+div.deneme1{
+    width: 300px;
+    margin: 20px auto;
+    border: 5px dotted red;
+    padding: 25px;
+}
+
+div.deneme2{
+    width: 300px;
+    margin: 20px auto;
+    border: 5px dotted red;
+    padding: 25px;
+    box-sizing: border-box;
+}
