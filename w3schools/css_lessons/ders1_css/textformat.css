@@ -1,0 +1,65 @@
+div.main {
+    border: 1px solid gray;
+    padding: 8px;
+    margin-bottom: 30px;
+  }
+
+  div.box1{
+    border: 2px groove red;
+    margin: auto;
+    padding: 2px 2px 2px 2px;
+    width: 300px;
+    height: 200px;          
+    margin-bottom: 30px;    
+  }
+
+  body{
+    color: #072408;
+  }
+  
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #4CAF50;
+  }
+  
+  p.main{
+    text-indent: 50px;
+    text-align: justify;
+    letter-spacing: 3px;
+  }
+
+  p.alignlast{
+    text-align-last: right;
+    letter-spacing: 2px;
+  }
+
+  p.direction{
+    direction: rtl; /* right to left anlamında */
+    unicode-bidi: bidi-override;
+  }
+
+  p.direction2{
+    direction: rtl;
+    unicode-bidi: embed;
+  }
+
+  p.direction3{
+    direction: rtl;
+    unicode-bidi: isolate-override;
+  }
+
+  p.direction4{
+    direction: rtl;
+    unicode-bidi: isolate;
+  }
+
+  p.direction5{
+    direction: rtl;
+    unicode-bidi: plaintext;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #008CBA;
+  }
