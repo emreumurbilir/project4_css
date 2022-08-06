@@ -190,3 +190,69 @@ div.deneme2{
 
 /* height width max-width */
 
+div.size1{
+    height: 200px;
+    width: 50%;
+    background-color: rgb(63, 31, 114);
+    text-align: center;
+    color: aliceblue;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+/* max-width: Browser'da pencere küçüldüğünde scroll bar çıkmaması için kullanılıyor. Örneğin değer olarak 700px verdik. Uygun olunca bu 700px korunuyor. Ama browser küçülünce 700px iptal oluyor, komutun maximum özelliği devreye giriyor. Mantıken width yerine max-width kullanmak çok daha mantıklı.  
+*/
+
+div.size2{
+    height: 200px;
+    max-width: 700px;
+    background-color: rgb(63, 31, 114);
+    text-align: center;
+    color: aliceblue;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+/* Outline; differs from borders! Unlike border, the outline is drawn outside the element's border, and may overlap other content. Also, the outline is NOT a part of the element's dimensions; the element's total width and height is not affected by the width of the outline. 
+
+The outline-style property specifies the style of the outline, and can have one of the following values:
+
+dotted - Defines a dotted outline
+dashed - Defines a dashed outline
+solid - Defines a solid outline
+double - Defines a double outline
+groove - Defines a 3D grooved outline
+ridge - Defines a 3D ridged outline
+inset - Defines a 3D inset outline
+outset - Defines a 3D outset outline
+none - Defines no outline
+hidden - Defines a hidden outline*/
+
+div.size3{
+    max-height: 200px;
+    max-width: 700px;
+    background-color: rgb(203, 176, 247);
+    text-align: center;
+    color: rgb(3, 26, 46);
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 4px dotted red;
+    outline: 15px groove goldenrod;
+}
+
+div.size4{
+    max-height: 200px;
+    max-width: 700px;
+    background-color: rgb(203, 176, 247);
+    text-align: center;
+    color: rgb(3, 26, 46);
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 60px;
+    border: 4px dotted red;
+    outline: thick solid blue;
+    outline-offset: 2em;
+} 

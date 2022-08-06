@@ -44,9 +44,35 @@
             To keep the width at 300px, no matter the amount of padding, you can use the box-sizing property. This causes the element to maintain its actual width; if you increase the padding, the available content space will decrease.
         </p>
     </div>
-    <p></p>
-    <p></p>
-    <p></p>
+    <div class="size1">
+        <p>
+            Lorem ipsum dolor sit amet.
+        </p>
+    </div>
+    <div class="size2">
+        <p>max-width: Browser'da pencere küçüldüğünde scroll bar çıkmaması için kullanılıyor. Örneğin değer olarak 700px verdik. Uygun olunca bu 700px korunuyor. Ama browser küçülünce 700px iptal oluyor, komutun maximum özelliği devreye giriyor. Mantıken width yerine max-width kullanmak çok daha mantıklı.</p>
+    </div>
+    <div class="size3">
+        <p>
+            Outline, üst örnektekinin margin-bottom:30px'ten yemiş durumda. Nedeni:
+        </p>
+        <p>
+            Outline; differs from borders! Unlike border, the outline is drawn outside the element's border, and may overlap other content. Also, the outline is NOT a part of the element's dimensions; the element's total width and height is not affected by the width of the outline. 
+        </p>
+    </div>
+    <div class="size4">
+        <p>
+            Bu örnekte, "may overlap other content"e tanık oluyoruz. Ayrıca "The following example shows that the space between an element and its outline is transparent"
+        </p>
+        <p>
+            The outline-width property specifies the width of the outline, and can have one of the following values:
+
+            thin (typically 1px)
+            medium (typically 3px)
+            thick (typically 5px)
+            A specific size (in px, pt, cm, em, etc)
+        </p>
+    </div>
 
 </body>
 </html>
