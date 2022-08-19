@@ -5,7 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="ders1_css/textformat.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Text Formatting</title>
+    <style>
+      /* unvisited link */
+      a:link {
+        color: red;
+      }
+
+      /* visited link */
+      a:visited {
+        color: green;
+      }
+
+      /* mouse over link */
+      a:hover {
+        color: hotpink;
+        text-decoration: underline;
+        background-color: bisque;
+      }
+
+      /* selected link */
+      a:active {
+        color: blue;
+      }
+    </style>
 </head>
 <body>
     <div class="main">
@@ -29,9 +53,268 @@
         <p class="direction5">Direction ile unicode-bidi denemesi:plaintext</p>
       </div>
       <div class="box1">
-        <p>
+        <p style="text-align: center;">
             Lorem ipsum dolor sit amet.
+            <p>
+              Text decoration örnekleri
+            </p>
+            <p style="text-decoration: underline; text-decoration-style: double;">
+              Overline heading 2 (heading yazma nedenim, g'nin kuyruğunun double underline'ı kestiğini göstermek. Kodlarla ilgisi yok)
+            </p>
+            <p style="text-decoration: line-through; text-decoration-style: wavy;">
+              line-through
+            </p>
+            <p style="text-decoration: underline; text-decoration-style: dashed;">
+              underline
+            </p>
+            <p style="text-decoration: underline overline; text-decoration-color: blue ; text-decoration-thickness: 5px;">
+              Underline, Overline thickness birlikte
+            </p> 
+            <p style="text-decoration: underline red double 5px;">
+              Hepsi birden tek kod dizininde
+            </p> 
+            <p>
+              Linklerde underline olmaması için text-decoration: none komutu kullanılır
+            </p>          
         </p>
       </div>
+      <div class="box1">
+        <h2>
+          Text Transformation komutları
+        </h2>
+        <p style="text-transform: uppercase;">
+          This text is transformed to uppercase.
+        </p>
+        <p style="text-transform: lowercase;">
+          This text is transformed to lowercase.
+        </p>
+        <p style="text-transform: capitalize;">
+          This text is capitalized.
+        </p>
+      </div>
+      <div class="box1">
+        <h2>
+          CSS Text Spacing
+        </h2>
+        <p style="text-indent: 50px;">
+          text-indent (50px)
+        </p>
+        <p style="letter-spacing: 5px;">
+          Letter Spacing
+        </p>
+        <p style="line-height: 1.8;">
+          <b>Line-height: satır yüksekliği. Normali 1. Bu bold yazılan örnekte 1.8 (px değil)</b>          
+        </p>
+        <p style="word-spacing: 5px;">
+          word-spacing, kelimeler arası boşluğu belirliyorsun. Bu örnekte 5px
+        </p>
+        <p style="white-space: nowrap;">
+          white-space: nowrap (Paragraftaki yazılar aşağıya otomatik atmıyor. Dümdüz devam ediyor. Çok uzunsa Scroll-bar çıkmasına yol açıyor)
+
+        </p>
+      </div>
+      <div class="box1">
+        <p style="text-shadow: 2px 2px 5px red;">
+          Text-shadow effect: 2px 2px 5px red; //Bu örnekte sırayla horizontal vertical gölge değeri, sonrasındaki 5px ise Blur effekti veriyor.
+        </p>
+        <p style="color: white; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;">
+          Bu da ilginç bir text shadow örneği
+        </p>
+      </div>
+      <div class="main">
+        <h2 style="text-align: center;">FONT'lar</h2>
+        <p>
+          In CSS there are five generic font families:
+          <li style="font-family: Georgia, serif; line-height: 1.5;"><b>Serif fonts</b> have a small stroke at the edges of each letter. They create a sense of formality and elegance.</li>
+          <li style="font-family: Arial, Helvetica, sans-serif; line-height: 1.5"> <b>Sans-serif fonts</b> have clean lines (no small strokes attached). They create a modern and minimalistic look.</li>
+          <li style="font-family: Courier New, Courier, monospace; line-height: 1.5"> <b>Monospace fonts</b> - here all the letters have the same fixed width. They create a mechanical look.</li>
+          <li style="font-size: larger; font-family: Brush Script Mt, cursive; line-height: 1.5">Cursive fonts imitate human handwriting.
+          </li>
+          <li style="font-family: Copperplate, Papyrus, fantasy; line-height: 1.5">
+            <b>Fantasy fonts</b> are decorative/playful fonts
+          </li>
+        </p>
+        <p>
+          <b>Note:</b>On computer screens, sans-serif fonts are considered easier to read than serif fonts
+        </p>
+        <p>
+          <b>Note:</b>If the font name is more than one word, it must be in quotation marks, like: "Times New Roman".
+        </p>
+        <p>
+          <b>Tip:</b> The font-family property should hold several font names as a "fallback" system, to ensure maximum compatibility between browsers/operating systems. Start with the font you want, and end with a generic family (to let the browser pick a similar font in the generic family, if no other fonts are available). The font names should be separated with comma. Read more about fallback fonts in the next chapter.
+          <br>
+          <b>Örnek :</b>font-family: "Times New Roman", Times, serif;
+        </p>
+        <p>
+          <b>Arial (sans-serif)</b> Arial is the most widely used font for both online and printed media. Arial is also the default font in Google Docs.
+          <br>
+          Arial is one of the safest web fonts, and it is available on all major operating systems.
+        </p>
+        <p>
+          <b>Verdana (sans-serif) : </b> Verdana is a very popular font. Verdana is easily readable even for small font sizes.        
+        </p>
+        <p>
+          <b>Helvetica (sans-serif) :</b>The Helvetica font is loved by designers. It is suitable for many types of business.
+        </p>
+        <p>
+          <b>Tahoma (sans-serif) :</b> The Tahoma font has less space between the characters.
+        </p>
+        <p>
+          <b>Trebuchet MS (sans-serif) :</b>Trebuchet MS was designed by Microsoft in 1996. Use this font carefully. Not supported by all mobile operating systems.
+        </p>
+        <p>
+          <b>Times New Roman (serif) : </b>Times New Roman is one of the most recognizable fonts in the world. It looks professional and is used in many newspapers and "news" websites. It is also the primary font for Windows devices and applications.
+        </p>
+        <p>
+          <b>Georgia (serif) : </b> Georgia is an elegant serif font. It is very readable at different font sizes, so it is a good candidate for mobile-responsive design.
+        </p>
+        <p>
+          <b>Garamond (serif)</b>Garamond is a classical font used for many printed books. It has a timeless look and good readability.
+        </p>
+        <p>
+          <b>Courier New (monospace)</b>Courier New is the most widely used monospace serif font. Courier New is often used with coding displays, and many email providers use it as their default font. Courier New is also the standard font for movie screenplays.
+        </p>
+        <p>
+          <b>Brush Script MT (cursive)</b>The Brush Script MT font was designed to mimic handwriting. It is elegant and sophisticated, but can be hard to read. Use it carefully.
+        </p>
+        <div class="box1">
+          <p>
+            <i>İtalik</i>
+          </p>
+          <p style="font-style: oblique;">
+            font-style: oblique Eğik - oblique. İtalikten biraz daha eğik.
+          </p>
+          <p style="font-variant: small-caps;">
+          font-variant: small-caps : Tüm harfler büyük (uppercase) ama baş harfler daha büyük. Daha doğrusu küçük harfleri büyüğe çeviriyor. Özel isimse tabii ki Ahmet</p>
+          <p style="font-weight: bold;">
+            font-weight: bold;
+          </p>          
+        </div>        
+      </div>
+      <div class="main">
+        <h2>Font sizes</h2>
+          <p>            
+            1em is equal to the current font size. The default text size in browsers is 16px. So, the default size of 1em is 16px.
+          </p>
+          <h2>Responsive Font Size :</h2>
+          <p>
+            The text size can be set with a vw unit, which means the <b>"viewport width". vw</b>
+            <br>
+            That way the text size will follow the size of the browser window.
+            <br>
+            <br>
+            h1 style="font-size:10vw">Hello World
+            <br>
+            Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.
+            <p style="font-size:5vw">
+              Example of 5vw: Hello World
+            </p>          
+          </p>
+      </div>
+    <div class="main">
+      <div class="box1">
+        <h2 style="text-align: center;">
+          CSS Google Fonts
+        </h2>
+        <p style="text-align: center;">
+          <a href="https://www.w3schools.com/css/css_font_google.asp" target="_blank">Detaylı bilgi için tıklayınız efe'm</a>
+        </p>
+        <p>Google, aynı zamanda Font Effect uygulama imkanı tanıyor. Üstteki linkten bunu inceleyebilirsin.</p>
+      </div>
+      <div class="box1">
+        <h2 style="text-align: center;">CSS Great Font Pairings</h2>
+        <p>Fontların birbiriyle uyumlu olması gerekir. Bununla ilgili bilgilerin yer aldığı link:</p>
+        <a href="https://www.w3schools.com/css/css_font_pairings.asp" target="_blank"> Font Pairings - Font Eşleştirme</a>
+      </div>      
+    </div>
+    <div class="main">
+      <p>
+        <h2>Kısaltılmış font kodu örnekleri:</h2>        
+        <p>To shorten the code, it is also possible to specify all the individual font properties in one property.</p>
+        <p>The font property is a shorthand property for:
+          <li>font-style</li>
+          <li>font-variant</li>
+          <li>font-weight</li>
+          <li>font-size/line-height</li>
+          <li>font-family</li>
+        </p>
+        <p>
+          Note: The font-size and font-family values are required. If one of the other values is missing, their default value are used.
+        </p>
+        <p style="font: italic small-caps bold 12px/30px Georgia, serif;">
+          Örnek: font: italic small-caps bold 12px/30px Georgia, serif;
+        </p>
+        <p>Buradaki 12 px, fontun büyüklüğünü, 30 px de line'ın yüksekliğini belirtiyor.</p>
+        <p style="font: 20px Arial, sans-serif;">
+          Örnek: font: 20px Arial, sans-serif;
+        </p>
+      </p>
+    </div>
+    <div class="main">
+      <div class="box1">
+        <h2>CSS Icons - Sayfaya ikon ekleme</h2>
+        <a href="https://www.w3schools.com/css/css_icons.asp" target="_blank">CSS Icons Tutorial</a>
+        <p>The simplest way to add an icon to your HTML page, is with an icon library, such as Font Awesome.
+        </p>
+        <p>
+          Add the name of the specified icon class to any inline HTML element (like < i > or < span >).
+        </p>
+        <p>Google Icons kütüphanesinden yararlanılan bir örnek. Yararlanabilmek için head kısmına şu linki <a href="https://fonts.googleapis.com/icon?family=Material+Icons" target="_blank">https://fonts.googleapis.com/icon?family=Material+Icons</a> ekliyoruz.
+        </p>
+        <p>Google Icons examples</p>
+        <i class="material-icons">cloud</i>
+        <i class="material-icons">arrow_circle_left</i>
+        <i class="material-icons">rebase</i>
+        <i class="material-icons">empty_dashboard</i>
+        <i class="material-icons">repartition</i>
+        <p>
+          <a href="https://fonts.google.com/icons" target="_blank">Daha fazlası için tıklayınız</a>
+        </p>        
+      </div>
+      <div class="box1">
+        <p>
+          Bu örnekte, Head'e gömülü link özellikleriyle <b>unvisited link (red), visited link (green), mouse over link (hover - hotpink)</b> - mouse imleci üzerindeyken linkin aldığı renk ve <b>selected link (active - blue) </b> - Linke basarken metnin aldığı renk
+        </p>
+        <p>
+          <a href="#">
+            denemesi
+          </a>
+        </p>
+        <p>
+          <a class="box1" href="#">Box denemesi</a>
+        </p>  
+        <p><b><a class="one" href="default.asp" target="_blank">This link changes color</a></b></p>
+        <p><b><a class="two" href="default.asp" target="_blank">This link changes font-size</a></b></p>
+        <p><b><a class="three" href="default.asp" target="_blank">This link changes background-color</a></b></p>
+        <p><b><a class="four" href="default.asp" target="_blank">This link changes font-family</a></b></p>
+        <p><b><a class="five" href="default.asp" target="_blank">This link changes text-decoration</a></b></p>
+        <p>
+          <a class="six" href="default.asp" target="_blank">This is a link</a>
+        </p>
+      </div>
+      <div class="box1">
+        <h2>The cursor Property</h2>
+        <p>Mouse over the words to change the cursor.</p>
+        <span style="cursor:auto">auto</span><br>
+        <span style="cursor:crosshair">crosshair</span><br>
+        <span style="cursor:default">default</span><br>
+        <span style="cursor:e-resize">e-resize</span><br>
+        <span style="cursor:help">help</span><br>
+        <span style="cursor:move">move</span><br>
+        <span style="cursor:n-resize">n-resize</span><br>
+        <span style="cursor:ne-resize">ne-resize</span><br>
+        <span style="cursor:nw-resize">nw-resize</span><br>
+        <span style="cursor:pointer">pointer</span><br>
+        <span style="cursor:progress">progress</span><br>
+        <span style="cursor:s-resize">s-resize</span><br>
+        <span style="cursor:se-resize">se-resize</span><br>
+        <span style="cursor:sw-resize">sw-resize</span><br>
+        <span style="cursor:text">text</span><br>
+        <span style="cursor:w-resize">w-resize</span><br>
+        <span style="cursor:wait">wait</span><br>
+
+        <p><strong>Tip:</strong> The cursor: hand is often used on links.</p>
+      </div>
+    </div>
 </body>
 </html>
